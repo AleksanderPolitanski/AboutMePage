@@ -1,0 +1,298 @@
+/*
+#EFEBE2
+#5F72A6
+#8294C4
+#DBDFEA
+
+
+
+*/
+
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-color:#DBDFEA;
+  color:#5F72A6;
+}
+
+.fira-text{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+a{
+  all: unset;
+}
+
+
+
+.large-text{
+  font-size: 48px;
+}
+
+.medium-text{
+  font-size: 33px;
+}
+
+.dark-blue-text{
+  color:#5F72A6;
+}
+
+.light-blue-text{
+  color:#8294C4;
+}
+
+.very-light-blue-text{
+  color:#DBDFEA;
+}
+
+.white-text{
+  color:#EFEBE2;
+}
+
+.white-triangle{
+  width: 0;
+  height: 0;
+  border-top: 206px solid transparent;
+  border-bottom: 200px solid transparent;
+  border-right: 329px solid #EFEBE2;
+  position: absolute;
+  top: 3%;
+  left: -97px;
+
+}
+
+.strong{
+  font-weight: bold;
+}
+
+.section-link:hover{
+  cursor: pointer;
+  color:#EFEBE2;
+}
+
+
+.hello-text{
+  position: absolute;
+  z-index: 1;
+  top: 164px;
+  left: 10px;
+  display:grid; 
+  width:70%; 
+  grid-template-columns: auto auto; 
+  grid-template-rows: 1fr 1fr 3fr 2fr;
+  max-width: 600px;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.centered-flex{
+  display:flex; 
+  justify-content:center; 
+  align-items:center;
+}
+
+.left-flex{
+  display:flex; 
+  justify-content:flex-start; 
+  align-items:center;
+}
+
+
+.coffee-stain{
+  width: 250px;
+  position: absolute;
+  top: 420px;
+  left: 1060px;
+  opacity: 40%;
+}
+
+
+.general-container{
+  width:100vw;
+  height:100vh;
+  position:relative;
+}
+
+.navigation-bar{
+  z-index: 1;
+  position:absolute; 
+  right: 73px; 
+  top: 20px; 
+  display:flex; 
+  gap:10px;
+}
+
+
+
+.badge{
+  width:90px;
+}
+
+.badge:hover{
+  cursor:pointer;
+}
+
+.badge-flex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.badge-container{
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  position:absolute; 
+  display:grid;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.about-me-text{
+  grid-column: 2 / 3; 
+  grid-row: 4 / 5; 
+  text-align: justify;
+  letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+@media(min-height: 651px) {
+  .badge-flex:hover{
+    border: #EFEBE2 5px solid;
+    border-radius: 80%;
+  }
+
+  #badge-office{
+    grid-column: 6; grid-row: 1;
+  }
+
+  #badge-dev{
+    grid-column: 3; grid-row: 4;
+  }
+}
+
+
+
+@media(max-height: 651px) {
+  .badge-flex:hover{
+    border: none;
+  }
+
+  #badge-office{
+    grid-column: 5; grid-row: 1;
+  }
+
+  #badge-dev{
+    grid-column: 3; grid-row: 3;
+  }
+}
+
+
+
+/* @media(max-width: 840px) {
+
+} */
+
+
+@media(min-width: 1024px) {
+  .white-page-division{
+    width: 0;
+    height: 0;
+    border-top: 100vh solid transparent;
+    border-right: 100vw solid #EFEBE2;
+  }
+
+  .badge-description{
+    grid-column: 5 / span 4 ; 
+    grid-row: 4 / span 2; 
+    margin-right: 30px; 
+    display:flex; 
+    justify-content: flex-end; 
+    align-items: center;
+    font-size: 25px;
+    text-align: right;
+  }
+
+  #badge-frontend{
+    grid-column: 1; grid-row: 2;
+  }
+  #badge-admin{
+    grid-column: 1; grid-row: 4;
+  }
+  #badge-appbuild{
+    grid-column: 4; grid-row: 3;
+  }
+  #badge-jsdev{
+    grid-column: 2; grid-row: 3;
+  }
+  #badge-apex{
+    grid-column: 4; grid-row: 1;
+  }
+  #badge-r{
+    grid-column: 5; grid-row: 2;
+  }
+  #badge-sf{
+    grid-column: 3; grid-row: 2;
+  }
+}
+
+
+
+
+
+@media(max-width: 1024px) {
+
+  .badge-description{
+    grid-column: 1 / -1 ; 
+    grid-row: 5 / 7; 
+    background-color: #EFEBE2;
+    padding-right: 30px; 
+    display:flex; 
+    justify-content: flex-end; 
+    align-items: center;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  #badge-office{
+    grid-column: 1; grid-row: 3;
+  }
+  #badge-dev{
+    grid-column: 2; grid-row: 3;
+  }
+  #badge-frontend{
+    grid-column: 3; grid-row: 3;
+  }
+  #badge-admin{
+    grid-column: 4; grid-row: 3;
+  }
+  #badge-appbuild{
+    grid-column: 1; grid-row: 4;
+  }
+  #badge-jsdev{
+    grid-column: 2; grid-row: 4;
+  }
+  #badge-apex{
+    grid-column: 3; grid-row: 4;
+  }
+  #badge-r{
+    grid-column: 4; grid-row: 4;
+  }
+  #badge-sf{
+    grid-column: 5; grid-row: 4;
+  }
+}
